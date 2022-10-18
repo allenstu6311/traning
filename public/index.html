@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+
+    <div id="app">
+
+      <form class="row g-3" action="../dist/url/file.php" method="post"  enctype="multipart/form-data">
+
+        <div class="col-md-3">
+          <label for="inputEmail4" class="form-label">產品名稱</label>
+          <input type="text" class="form-control" id="inputEmail4" name="name">
+        </div>
+        <div class="col-md-3">
+          <label for="inputPassword4" class="form-label">價錢</label>
+          <input type="text" class="form-control" id="inputPassword4" name="price">
+        </div>
+    
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">產品圖片</label>
+          <input type="file" name="pic">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">評價</label>
+          <input type="text" name="evaluation" class="form-control" id="inputPassword4">
+        </div>
+         <div class="col-md-4">
+          <label for="inputState" class="form-label">評價人數</label>
+          <input type="text" name="people" class="form-control" id="inputPassword4">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">商品狀態</label>
+          <input type="text" name="label" class="form-control" id="inputPassword4">
+        </div>
+      
+        <div class="col-16">
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+      </form>
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

@@ -1,0 +1,48 @@
+{
+  "name": "pratice",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@fullcalendar/core": "^5.11.3",
+    "@fullcalendar/vue3": "^5.11.2",
+    "ant-design-vue": "^3.2.13",
+    "axios": "^0.27.2",
+    "bootstrap": "^5.2.1",
+    "core-js": "^3.8.3",
+    "dayjs": "^1.11.5",
+    "element-plus": "^2.2.17",
+    "element-ui": "^2.15.10",
+    "emailjs-com": "^3.2.0",
+    "fullcalendar": "^5.11.3",
+    "fullcalendar-scheduler": "^5.11.3",
+    "leaflet": "^1.9.1",
+    "marker": "^0.1.2",
+    "moment": "^2.29.4",
+    "register-service-worker": "^1.7.2",
+    "vue": "^3.2.13",
+    "vue-axios": "^3.4.1",
+    "vue-full-calendar": "^2.8.1-0",
+    "vue-router": "^4.0.3",
+    "vuex": "^4.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-pwa": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "sass": "^1.32.7",
+    "sass-loader": "^12.0.0",
+    "vue-cropper": "^1.0.5"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}
