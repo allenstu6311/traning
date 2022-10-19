@@ -22,7 +22,7 @@
   <tbody v-if="change==1">
     <tr v-for="item in data" :key="item.PROD_ID">
       <th scope="row">{{item.PROD_ID}}</th>
-      <td><img :src="require(`../../public/url/images/${item.PROD_PIC}`)" alt=""></td>
+      <td><img :src="require(`../../dist/img/${item.PROD_PIC}`)" alt=""></td>
       <td>{{item.PROD_NAME}}</td>
       <td>{{item.PROD_PRICE}}</td>
     </tr>
@@ -94,18 +94,18 @@ import User from "../components/User.vue"
 
         },
         created(){
-            this.axios.get("http://localhost/traning/pratice/public/url/list.php")
+            this.axios.get(`/api_server/list.php`)
             .then((res)=>{
                 // console.log(res)
                 this.data=res.data
                 this.info=this.data
             })
 
-               this.axios.get("http://localhost/traning/pratice/public/url/list2.php")
-            .then((res)=>{
-                // console.log(res)
-                this.newData = res.data
-            })
+            //    this.axios.get("http://localhost/traning/pratice/public/url/list2.php")
+            // .then((res)=>{
+            //     // console.log(res)
+            //     this.newData = res.data
+            // })
         },
         update(){
            

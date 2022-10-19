@@ -121,6 +121,12 @@ export const routes = [
 
   },
   {
+    path:'/Filter',
+    name:'Filter',
+    component: () => import(/* webpackChunkName: "post" */ '../views/Filter.vue'),
+
+  },
+  {
     path:'/shop',
     name:'shop',
     component: () => import(/* webpackChunkName: "post" */ '../views/Shop.vue'),

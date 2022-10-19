@@ -8,9 +8,22 @@ module.exports = defineConfig({
     : '/',
 	
 	//預設為dist
-	outputDir: 'anchuse',
+	
+  devServer:{
+   
+    proxy:{
+      '/api_sever':{
+        target:'http://localhost/phpfile',
+        changeOrigin:true,
+        pathRewrite:{
+          '^/api_sever':''
+        }
+      }
+    },
+   
+  },
  
-
+  productionSourceMap:false
   
 })
 
