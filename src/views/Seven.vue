@@ -22,7 +22,7 @@
   <tbody v-if="change==1">
     <tr v-for="item in data" :key="item.PROD_ID">
       <th scope="row">{{item.PROD_ID}}</th>
-      <td><img :src="require(`../../dist/img/${item.PROD_PIC}`)" alt=""></td>
+        
       <td>{{item.PROD_NAME}}</td>
       <td>{{item.PROD_PRICE}}</td>
     </tr>

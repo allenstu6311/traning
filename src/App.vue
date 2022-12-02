@@ -3,7 +3,7 @@
 
   <nav>
     <router-link v-for ="item in routes" :key="item.path"
-      :to ="item.path">{{item.name}}|</router-link>
+      :to ="item.path">{{item.name}}|讚</router-link>
 
 
 
