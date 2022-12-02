@@ -1,20 +1,20 @@
 <template>
   <ChoseDate />
 
-<Calendar />
+
 
   
 </template>
 <script>
 import { DatePicker } from 'ant-design-vue';
 import ChoseDate from"@/components/ChoseDate.vue"
-import Calendar from "@/components/Calendar.vue"
+
 
 
 export default {
   components:{
     ChoseDate,
-    Calendar
+  
   },
   data(){
     return{
